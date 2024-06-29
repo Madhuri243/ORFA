@@ -1,0 +1,106 @@
+	
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to shopping cart</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let tp = document.getElementById("totalPrice").innerText;
+            console.log(tp);
+            localStorage.setItem("tp", tp);
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="leftItem">
+            <img src="orfalogo.jpg">
+            <nav class="nav">
+                <li class="navLink">Home</li>
+                <li class="navLink">About</li>
+                <li class="navLink">purchase</li>
+                <li class="navLink">Reviews</li>
+            </nav>
+        </div>
+
+        <div class="rightItem">
+            <span class="signin">
+                <i class="fas fa-user" id="login-btn"></i>
+            </span>
+            <span class="totalItem" id="totalItem">0</span>
+            <i class="fa-solid fa-cart-shopping cart" id="shoppingCart"></i>
+        </div>
+        <form action="" class="login-form">
+            
+            <a href="http://localhost/log/index.php">logout</a>
+              
+        </form>
+        
+    </header>
+      
+    <main>
+        <div id="main">
+            <marquee direction=left> <p id="tag"><b>Growing Naturally, Harvesting Health...!!!</b></p>
+                    <p id="tag"><b>Sow Organic, Reap Wellness</b></p>
+            </marquee>
+          </div> 
+    
+        </main>
+    <!-- Item Cards -->
+    <div class="itemContainer" id="itemContainer"></div>
+	<div class="cartContainer" id="cartContainer">
+		<div class="closeCart" id="closeCart">
+			<h3>close</h3>
+		</div>
+		<h1 class="cartTitle" id="cartTitle">No Item</h1>
+        <div class="eachCartItemContainer" id="eachCartItemContainer">
+			
+		</div>
+        <div id="cout"><a href="http://localhost/prj/shipping.html" id="checkOut-btn">checkout</a></div>
+		<div class="totalPriceContainer" id="totalPriceContainer">
+            
+			<p>Total Price<span id="totalPrice">0</span></p>
+		</div>
+	</div>
+    
+    <script src="scripts.js" ></script>
+    <footer>
+        <div class="foot-pannel1">
+            Back to top
+        </div>
+        <div class="foot-pannel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About ORFA</a>
+                 <a>ORFA Services</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo2"></div>
+        </div>
+        <div class="foot-pannel4">
+            <div class="pages">
+                <ul>
+                <a>Conditional of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+                <a>Contact us :orfa@gmail.com</a>
+                </ul>
+        </div>
+        </div>
+        <div class="copyright"></div>    
+        
+     </footer>
+    
+   
+</body>
+</html>
